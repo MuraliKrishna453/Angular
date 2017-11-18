@@ -1,0 +1,13 @@
+<div class="container color-dark">
+    <div class="col">
+        <p>About App </p>
+    </div>
+</div>
+
+<div class="container color-light ">
+    <div class="col" *ngFor="let goal of goals">
+        <p class="life-container" (click)="removeItem(i)">{{goal}}</p>
+        <a routerLink="item/{{goal}}">Info</a>
+
+    </div>
+</div>
